@@ -1,0 +1,41 @@
+name: ParaBank API Tests
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    name: Run Reqnroll Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore NuGet packages
+        run: dotnet restore src/ParaBank.API.Tests/ParaBank.API.Tests.csproj
+
+      - name: Build project
+        run: dotnet build src/ParaBank.API.Tests/ParaBank.API.Tests.csproj --no-restore --configuration Release
+
+      - name: Run all tests
+        run: |
+          dotnet test src/ParaBank.API.Tests/ParaBank.API.Tests.csproj \
+            --no-build \
+            --configuration Release \
+            --logger "trx;LogFileName=test-results.trx" \
+            --logger "console;verbosity=detailed"
+
+      - name: Publish test results
+        uses: EnricoMi/publish-unit-test-result-action@v2
+        if: always()
+        with:
+          files: '**/test-results.trx'

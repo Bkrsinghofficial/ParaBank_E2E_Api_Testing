@@ -1,0 +1,1377 @@
+2026-10-21 18:32:45.838 [INF] Logger initialised at "Information" level
+2026-10-21 18:32:45.867 [INF] === ParaBank API Test Run Started ===
+2026-10-21 18:32:45.944 [INF] ▶ Scenario: New savings account creation and basic operations
+2026-10-21 18:32:45.945 [INF] ▶ Scenario: User cannot access another user's account data
+2026-10-21 18:32:45.945 [INF] ▶ Scenario: Future date range returns empty array
+2026-10-21 18:32:45.945 [INF] ▶ Scenario: Negative deposit amount is rejected
+2026-10-21 18:32:45.944 [INF] ▶ Scenario: All transaction endpoints return consistent data for today
+2026-10-21 18:32:45.945 [INF] ▶ Scenario: Account data integrity is maintained after failed operation
+2026-10-21 18:32:45.945 [INF] ▶ Scenario: Full customer journey - login, transact, and retrieve by date range
+2026-10-21 18:32:45.945 [INF] ▶ Scenario: Money transfer reduces source and increases target by exact amount
+2026-10-21 18:32:45.945 [INF] ▶ Scenario: Bill payment is processed and returns correct payee details
+2026-10-21 18:32:45.945 [INF] ▶ Scenario: Transaction endpoint responds within SLA
+2026-10-21 18:32:45.967 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:45.967 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:45.967 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:45.967 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:45.967 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:45.967 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:45.967 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:45.967 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:45.967 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:45.967 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:47.264 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:47.264 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:47.264 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:47.264 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:47.264 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:47.274 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:32:47.274 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:32:47.274 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:32:47.323 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:47.323 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:47.324 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:47.325 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:47.328 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:32:47.329 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:47.332 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:32:47.372 [WRN] ✘ FAILED: Negative deposit amount is rejected — Unknown error
+2026-10-21 18:32:47.372 [WRN] ✘ FAILED: Future date range returns empty array — Unknown error
+2026-10-21 18:32:47.372 [WRN] ✘ FAILED: Account data integrity is maintained after failed operation — Unknown error
+2026-10-21 18:32:47.372 [WRN] ✘ FAILED: Transaction endpoint responds within SLA — Unknown error
+2026-10-21 18:32:47.372 [WRN] ✘ FAILED: User cannot access another user's account data — Unknown error
+2026-10-21 18:32:47.396 [INF] ▶ Scenario: Multiple failed operations do not accumulate errors
+2026-10-21 18:32:47.396 [INF] ▶ Scenario: Account list response contains required contract fields
+2026-10-21 18:32:47.397 [INF] ▶ Scenario: Month and year boundary spanning
+2026-10-21 18:32:47.397 [INF] ▶ Scenario: Special characters in username are safely rejected
+2026-10-21 18:32:47.397 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:47.397 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:47.397 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:47.397 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:47.647 [INF]   ➤ Found 12 accounts
+2026-10-21 18:32:47.655 [INF]   ➤ Found 12 accounts
+2026-10-21 18:32:47.661 [INF]   ➤ Found 12 accounts
+2026-10-21 18:32:47.664 [INF]   ➤ Creating savings account for customer 0
+2026-10-21 18:32:47.669 [INF]   ➤ Found 12 accounts
+2026-10-21 18:32:47.672 [INF]   ➤ Paying bill of $75.00 to 'Electric Company' from account 12345
+2026-10-21 18:32:47.692 [INF]   ➤ Found 12 accounts
+2026-10-21 18:32:47.854 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:47.854 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:47.855 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:47.855 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:47.937 [WRN] ✘ FAILED: Special characters in username are safely rejected — Unknown error
+2026-10-21 18:32:47.937 [WRN] ✘ FAILED: Month and year boundary spanning — Unknown error
+2026-10-21 18:32:47.937 [WRN] ✘ FAILED: Account list response contains required contract fields — Unknown error
+2026-10-21 18:32:47.945 [INF] ▶ Scenario: Missing amount in deposit returns error
+2026-10-21 18:32:47.945 [INF] ▶ Scenario: Account list endpoint consistently responds under load
+2026-10-21 18:32:47.945 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:47.945 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:47.946 [INF] ▶ Scenario: Reversed date range handling
+2026-10-21 18:32:47.947 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:47.947 [WRN] ✘ FAILED: Multiple failed operations do not accumulate errors — Unknown error
+2026-10-21 18:32:47.949 [INF] ▶ Scenario: Failed overdraft withdrawal leaves balance unchanged
+2026-10-21 18:32:47.949 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:47.994 [WRN] ✘ FAILED: Full customer journey - login, transact, and retrieve by date range — Expected TestContext.CustomerId to be greater than 0 because customerId must be set before this step, but found 0.
+2026-10-21 18:32:48.012 [INF]   ➤ Depositing $25.00 to account 0
+2026-10-21 18:32:48.045 [WRN] ✘ FAILED: New savings account creation and basic operations — Expected response.StatusCode to be between 200 and 299 because create savings account should return a success status code, but found 404.
+2026-10-21 18:32:48.046 [INF] ✔ PASSED: Bill payment is processed and returns correct payee details
+2026-10-21 18:32:48.285 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:48.285 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:48.294 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:48.300 [WRN] ✘ FAILED: Missing amount in deposit returns error — Unknown error
+2026-10-21 18:32:48.303 [INF] ▶ Scenario: Request with non-existent account ID returns error
+2026-10-21 18:32:48.303 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:48.305 [WRN] ✘ FAILED: Reversed date range handling — Unknown error
+2026-10-21 18:32:48.307 [INF] ▶ Scenario: Range includes all dates within boundaries
+2026-10-21 18:32:48.307 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:48.309 [WRN] ✘ FAILED: Failed overdraft withdrawal leaves balance unchanged — Unknown error
+2026-10-21 18:32:48.334 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:48.343 [WRN] ✘ FAILED: Account list endpoint consistently responds under load — Unknown error
+2026-10-21 18:32:48.346 [INF] ▶ Scenario: Transaction list returns valid JSON contract
+2026-10-21 18:32:48.347 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:48.388 [WRN] ✘ FAILED: All transaction endpoints return consistent data for today — Expected _lastResponseStatusCode to be 200 because deposit should succeed with HTTP 200, but found 400 (difference of 200).
+2026-10-21 18:32:48.416 [INF]   ➤ Transferring $50.00 from 0 to 0
+2026-10-21 18:32:48.638 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:48.651 [WRN] ✘ FAILED: Request with non-existent account ID returns error — Unknown error
+2026-10-21 18:32:48.654 [INF] ▶ Scenario: Invalid login credentials are rejected
+2026-10-21 18:32:48.654 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:48.671 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:48.682 [WRN] ✘ FAILED: Range includes all dates within boundaries — Unknown error
+2026-10-21 18:32:48.684 [INF] ▶ Scenario: Boundaries are inclusive
+2026-10-21 18:32:48.684 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:48.711 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:48.721 [WRN] ✘ FAILED: Transaction list returns valid JSON contract — Unknown error
+2026-10-21 18:32:48.724 [INF] ▶ Scenario: Account list endpoint responds within SLA
+2026-10-21 18:32:48.725 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:48.775 [WRN] ✘ FAILED: Money transfer reduces source and increases target by exact amount — Expected _transferStatusCode to be 200 because transfer should succeed, but found 400 (difference of 200).
+2026-10-21 18:32:48.982 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:48.993 [WRN] ✘ FAILED: Invalid login credentials are rejected — Unknown error
+2026-10-21 18:32:48.995 [INF] ▶ Scenario: Extremely large deposit amount is handled
+2026-10-21 18:32:48.995 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:49.041 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:49.052 [WRN] ✘ FAILED: Boundaries are inclusive — Unknown error
+2026-10-21 18:32:49.054 [INF] ▶ Scenario: No duplicate transactions
+2026-10-21 18:32:49.054 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:49.088 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:49.100 [WRN] ✘ FAILED: Account list endpoint responds within SLA — Unknown error
+2026-10-21 18:32:49.319 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:49.331 [WRN] ✘ FAILED: Extremely large deposit amount is handled — Unknown error
+2026-10-21 18:32:49.334 [INF] ▶ Scenario: SQL injection in login username is safely rejected
+2026-10-21 18:32:49.334 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:49.435 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:49.441 [WRN] ✘ FAILED: No duplicate transactions — Unknown error
+2026-10-21 18:32:49.444 [INF] ▶ Scenario: Empty range returns empty array
+2026-10-21 18:32:49.444 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:49.688 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:49.700 [WRN] ✘ FAILED: SQL injection in login username is safely rejected — Unknown error
+2026-10-21 18:32:49.702 [INF] ▶ Scenario: Transfer to non-existent account is rejected
+2026-10-21 18:32:49.703 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:49.794 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:49.802 [WRN] ✘ FAILED: Empty range returns empty array — Unknown error
+2026-10-21 18:32:49.804 [INF] ▶ Scenario: Single date returns only transactions for that date
+2026-10-21 18:32:49.804 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:50.045 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:50.054 [WRN] ✘ FAILED: Transfer to non-existent account is rejected — Unknown error
+2026-10-21 18:32:50.056 [INF] ▶ Scenario: Zero deposit amount is rejected
+2026-10-21 18:32:50.056 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:50.159 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:50.166 [WRN] ✘ FAILED: Single date returns only transactions for that date — Unknown error
+2026-10-21 18:32:50.382 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:50.393 [WRN] ✘ FAILED: Zero deposit amount is rejected — Unknown error
+2026-10-21 18:32:50.395 [INF] ▶ Scenario: Overdraft withdrawal is rejected
+2026-10-21 18:32:50.396 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:50.731 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:50.739 [WRN] ✘ FAILED: Overdraft withdrawal is rejected — Unknown error
+2026-10-21 18:32:50.741 [INF] ▶ Scenario: Request with string account ID returns error
+2026-10-21 18:32:50.741 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:32:51.064 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:32:51.074 [WRN] ✘ FAILED: Request with string account ID returns error — Unknown error
+2026-10-21 18:32:51.083 [INF] === ParaBank API Test Run Completed ===
+2026-10-21 18:33:42.387 [INF] Logger initialised at "Information" level
+2026-10-21 18:33:42.407 [INF] === ParaBank API Test Run Started ===
+2026-10-21 18:33:42.463 [INF] ▶ Scenario: Future date range returns empty array
+2026-10-21 18:33:42.463 [INF] ▶ Scenario: User cannot access another user's account data
+2026-10-21 18:33:42.463 [INF] ▶ Scenario: Transaction endpoint responds within SLA
+2026-10-21 18:33:42.463 [INF] ▶ Scenario: Account data integrity is maintained after failed operation
+2026-10-21 18:33:42.463 [INF] ▶ Scenario: Money transfer reduces source and increases target by exact amount
+2026-10-21 18:33:42.463 [INF] ▶ Scenario: Full customer journey - login, transact, and retrieve by date range
+2026-10-21 18:33:42.463 [INF] ▶ Scenario: New savings account creation and basic operations
+2026-10-21 18:33:42.463 [INF] ▶ Scenario: Bill payment is processed and returns correct payee details
+2026-10-21 18:33:42.463 [INF] ▶ Scenario: All transaction endpoints return consistent data for today
+2026-10-21 18:33:42.463 [INF] ▶ Scenario: Negative deposit amount is rejected
+2026-10-21 18:33:42.483 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:42.483 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:42.483 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:42.483 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:42.483 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:42.483 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:42.483 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:42.483 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:42.483 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:42.483 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:43.200 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:43.200 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:43.208 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:43.208 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:43.240 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:43.242 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:43.491 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:43.493 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:43.494 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:43.496 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:43.497 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:43.498 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:43.506 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:43.508 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:43.516 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:43.518 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:43.534 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:43.536 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:43.538 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:43.540 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:43.544 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:43.546 [INF]   ➤ Logging in as second user 'jane'
+2026-10-21 18:33:43.548 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:43.612 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:43.615 [INF]   ➤ Attempting deposit of invalid amount -100
+2026-10-21 18:33:43.823 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:43.825 [INF]   ➤ Creating savings account for customer 12212
+2026-10-21 18:33:43.841 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:43.843 [INF]   ➤ Fetching transactions from 01-01-2099 to 12-31-2099 for account 12345
+2026-10-21 18:33:43.851 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:43.855 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:43.857 [INF]   ➤ Paying bill of $75.00 to 'Electric Company' from account 12345
+2026-10-21 18:33:43.861 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:43.870 [INF]   ➤ Measuring transaction list response time
+2026-10-21 18:33:43.871 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:43.906 [INF]   ➤ User 12212 attempting to access account 0
+2026-10-21 18:33:43.913 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:43.975 [ERR] HTTP request to /deposit threw an exception
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: S. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ParaBank.API.Tests.Helpers.ApiClient.ExecuteAsync[T](RestRequest request) in d:\Projects\Project2\src\ParaBank.API.Tests\Helpers\ApiClient.cs:line 85
+2026-10-21 18:33:44.031 [WRN] ✘ FAILED: Negative deposit amount is rejected — Expected _lastStatusCode to be between 400 and 500 because invalid operations should be rejected with a 4xx client error, but found 0.
+2026-10-21 18:33:44.043 [INF] ▶ Scenario: Special characters in username are safely rejected
+2026-10-21 18:33:44.044 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:44.160 [WRN] ✘ FAILED: New savings account creation and basic operations — Expected response.StatusCode to be between 200 and 299 because create savings account should return a success status code, but found 404.
+2026-10-21 18:33:44.167 [INF] ✔ PASSED: Future date range returns empty array
+2026-10-21 18:33:44.169 [INF] ▶ Scenario: Month and year boundary spanning
+2026-10-21 18:33:44.169 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:44.205 [INF]   ➤ Depositing $25.00 to account 0
+2026-10-21 18:33:44.217 [INF]   ➤ Balance before invalid op: -$2,660.00
+2026-10-21 18:33:44.218 [INF]   ➤ Attempting invalid (overdraft) withdrawal
+2026-10-21 18:33:44.221 [INF] ✔ PASSED: Bill payment is processed and returns correct payee details
+2026-10-21 18:33:44.226 [INF]   ➤ ✓ Response time 351ms < 5000ms
+2026-10-21 18:33:44.230 [INF]   ➤ Transferring $50.00 from 0 to 0
+2026-10-21 18:33:44.233 [INF] ✔ PASSED: Transaction endpoint responds within SLA
+2026-10-21 18:33:44.234 [INF] ▶ Scenario: Account list response contains required contract fields
+2026-10-21 18:33:44.234 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:44.253 [INF] ✔ PASSED: User cannot access another user's account data
+2026-10-21 18:33:44.273 [INF]   ➤ Depositing $100.00 to account 0
+2026-10-21 18:33:44.406 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:44.407 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:44.516 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:44.517 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:44.551 [WRN] ✘ FAILED: All transaction endpoints return consistent data for today — Expected _lastResponseStatusCode to be 200 because deposit should succeed with HTTP 200, but found 400 (difference of 200).
+2026-10-21 18:33:44.564 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:44.565 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:44.566 [WRN] ✘ FAILED: Money transfer reduces source and increases target by exact amount — Expected _transferStatusCode to be 200 because transfer should succeed, but found 400 (difference of 200).
+2026-10-21 18:33:44.657 [WRN] ✘ FAILED: Full customer journey - login, transact, and retrieve by date range — Expected _lastResponseStatusCode to be 200 because deposit should succeed with HTTP 200, but found 400 (difference of 200).
+2026-10-21 18:33:44.761 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:44.763 [INF]   ➤ Attempting login with invalid credentials '<script>alert(1)</script>'
+2026-10-21 18:33:44.861 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:44.863 [INF]   ➤ Fetching transactions from 12-31-2023 to 01-01-2024 for account 12345
+2026-10-21 18:33:44.904 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:44.906 [INF]   ➤ Measuring account list response time
+2026-10-21 18:33:44.969 [INF] ✔ PASSED: Special characters in username are safely rejected
+2026-10-21 18:33:44.970 [INF] ▶ Scenario: Missing amount in deposit returns error
+2026-10-21 18:33:44.970 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:45.025 [WRN] ✘ FAILED: Account data integrity is maintained after failed operation — Expected response.StatusCode to be between 200 and 299 because account integrity check should return a success status code, but found 400.
+2026-10-21 18:33:45.027 [INF] ▶ Scenario: Multiple failed operations do not accumulate errors
+2026-10-21 18:33:45.027 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:45.208 [INF] ✔ PASSED: Month and year boundary spanning
+2026-10-21 18:33:45.209 [INF] ▶ Scenario: Reversed date range handling
+2026-10-21 18:33:45.209 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:45.238 [INF]   ➤ Response time: 332ms
+2026-10-21 18:33:45.242 [WRN] ✘ FAILED: Account list response contains required contract fields — Expected _lastRawContent "Could not find customer #0" to contain ""id"" because account response must contain 'id'.
+2026-10-21 18:33:45.244 [INF] ▶ Scenario: Account list endpoint consistently responds under load
+2026-10-21 18:33:45.244 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:45.340 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:45.341 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:45.382 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:45.383 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:45.554 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:45.555 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:45.569 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:45.571 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:45.682 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:45.683 [INF]   ➤ Attempting deposit of invalid amount -1
+2026-10-21 18:33:45.714 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:45.902 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:45.903 [INF]   ➤ Fetching transactions from 12-31-2024 to 01-01-2024 for account 12345
+2026-10-21 18:33:45.910 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:45.911 [INF]   ➤ Measuring account list response time
+2026-10-21 18:33:46.019 [ERR] HTTP request to /deposit threw an exception
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: S. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ParaBank.API.Tests.Helpers.ApiClient.ExecuteAsync[T](RestRequest request) in d:\Projects\Project2\src\ParaBank.API.Tests\Helpers\ApiClient.cs:line 85
+2026-10-21 18:33:46.022 [WRN] ✘ FAILED: Missing amount in deposit returns error — Expected _lastStatusCode to be between 400 and 500 because invalid operations should be rejected with a 4xx client error, but found 0.
+2026-10-21 18:33:46.024 [INF] ▶ Scenario: Request with non-existent account ID returns error
+2026-10-21 18:33:46.024 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:46.049 [INF]   ➤ Balance before invalid op: -$2,661.00
+2026-10-21 18:33:46.049 [INF]   ➤ Attempting invalid (overdraft) withdrawal
+2026-10-21 18:33:46.236 [INF]   ➤ Response time: 325ms
+2026-10-21 18:33:46.237 [INF]   ➤ ✓ Response time 325ms < 10000ms
+2026-10-21 18:33:46.238 [INF] ✔ PASSED: Account list endpoint consistently responds under load
+2026-10-21 18:33:46.239 [INF] ▶ Scenario: Transaction list returns valid JSON contract
+2026-10-21 18:33:46.239 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:46.246 [INF] ✔ PASSED: Reversed date range handling
+2026-10-21 18:33:46.247 [INF] ▶ Scenario: Range includes all dates within boundaries
+2026-10-21 18:33:46.248 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:46.379 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:46.380 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:46.408 [INF]   ➤ Attempting invalid (overdraft) withdrawal
+2026-10-21 18:33:46.562 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:46.564 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:46.570 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:46.572 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:46.743 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:46.745 [INF]   ➤ Requesting account info for accountId: 99999999
+2026-10-21 18:33:46.893 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:46.894 [INF]   ➤ Fetching transactions from 01-01-2024 to 12-31-2024 for account 12345
+2026-10-21 18:33:46.908 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:46.909 [INF]   ➤ Measuring transaction list response time
+2026-10-21 18:33:47.086 [WRN] ✘ FAILED: Multiple failed operations do not accumulate errors — Expected _balanceAfterInvalidOp to be -2661.00M because a failed invalid operation must not modify the account balance, but found 0M (difference of 2661.00).
+2026-10-21 18:33:47.087 [INF] ▶ Scenario: Failed overdraft withdrawal leaves balance unchanged
+2026-10-21 18:33:47.088 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:47.106 [INF] ✔ PASSED: Request with non-existent account ID returns error
+2026-10-21 18:33:47.108 [INF] ▶ Scenario: Invalid login credentials are rejected
+2026-10-21 18:33:47.108 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:47.212 [INF] ✔ PASSED: Range includes all dates within boundaries
+2026-10-21 18:33:47.213 [INF] ▶ Scenario: Boundaries are inclusive
+2026-10-21 18:33:47.213 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:47.234 [INF] ✔ PASSED: Transaction list returns valid JSON contract
+2026-10-21 18:33:47.236 [INF] ▶ Scenario: Account list endpoint responds within SLA
+2026-10-21 18:33:47.236 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:47.455 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:47.457 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:47.479 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:47.480 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:47.569 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:47.569 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:47.570 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:47.570 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:47.802 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:47.850 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:47.850 [INF]   ➤ Attempting login with invalid credentials 'invalid_user'
+2026-10-21 18:33:47.896 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:47.896 [INF]   ➤ Fetching transactions from 01-01-2024 to 01-01-2024 for account 12345
+2026-10-21 18:33:47.902 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:47.903 [INF]   ➤ Measuring account list response time
+2026-10-21 18:33:48.130 [INF]   ➤ Balance before invalid op: -$2,661.00
+2026-10-21 18:33:48.130 [INF]   ➤ Attempting invalid (overdraft) withdrawal
+2026-10-21 18:33:48.194 [INF] ✔ PASSED: Invalid login credentials are rejected
+2026-10-21 18:33:48.195 [INF] ▶ Scenario: Extremely large deposit amount is handled
+2026-10-21 18:33:48.196 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:48.227 [INF] ✔ PASSED: Boundaries are inclusive
+2026-10-21 18:33:48.228 [INF] ▶ Scenario: No duplicate transactions
+2026-10-21 18:33:48.228 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:48.235 [INF]   ➤ Response time: 332ms
+2026-10-21 18:33:48.235 [INF]   ➤ ✓ Response time 332ms < 5000ms
+2026-10-21 18:33:48.237 [INF] ✔ PASSED: Account list endpoint responds within SLA
+2026-10-21 18:33:48.492 [ERR] HTTP request to /withdraw threw an exception
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: S. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ParaBank.API.Tests.Helpers.ApiClient.ExecuteAsync[T](RestRequest request) in d:\Projects\Project2\src\ParaBank.API.Tests\Helpers\ApiClient.cs:line 85
+2026-10-21 18:33:48.551 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:48.553 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:48.558 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:48.559 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:48.849 [WRN] ✘ FAILED: Failed overdraft withdrawal leaves balance unchanged — Expected _balanceAfterInvalidOp to be -2661.00M because a failed invalid operation must not modify the account balance, but found 0M (difference of 2661.00).
+2026-10-21 18:33:48.880 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:48.882 [INF]   ➤ Retrieving transactions for today (10-21-2026)
+2026-10-21 18:33:48.902 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:48.902 [INF]   ➤ Attempting deposit of invalid amount -999999999
+2026-10-21 18:33:49.204 [INF] ✔ PASSED: No duplicate transactions
+2026-10-21 18:33:49.206 [INF] ▶ Scenario: Empty range returns empty array
+2026-10-21 18:33:49.206 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:49.245 [ERR] HTTP request to /deposit threw an exception
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: S. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ParaBank.API.Tests.Helpers.ApiClient.ExecuteAsync[T](RestRequest request) in d:\Projects\Project2\src\ParaBank.API.Tests\Helpers\ApiClient.cs:line 85
+2026-10-21 18:33:49.247 [WRN] ✘ FAILED: Extremely large deposit amount is handled — Expected _lastStatusCode to be between 400 and 500 because invalid operations should be rejected with a 4xx client error, but found 0.
+2026-10-21 18:33:49.248 [INF] ▶ Scenario: SQL injection in login username is safely rejected
+2026-10-21 18:33:49.249 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:49.522 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:49.523 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:49.584 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:49.585 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:49.848 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:49.849 [INF]   ➤ Fetching transactions from 01-01-2000 to 01-02-2000 for account 12345
+2026-10-21 18:33:49.929 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:49.930 [INF]   ➤ Attempting login with invalid credentials 'john' OR '1'='1'
+2026-10-21 18:33:50.110 [INF] ✔ PASSED: SQL injection in login username is safely rejected
+2026-10-21 18:33:50.111 [INF] ▶ Scenario: Transfer to non-existent account is rejected
+2026-10-21 18:33:50.111 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:50.168 [INF] ✔ PASSED: Empty range returns empty array
+2026-10-21 18:33:50.169 [INF] ▶ Scenario: Single date returns only transactions for that date
+2026-10-21 18:33:50.169 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:50.442 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:50.444 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:50.488 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:50.490 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:50.793 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:50.794 [INF]   ➤ Attempting transfer to non-existent account
+2026-10-21 18:33:50.811 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:50.811 [INF]   ➤ Retrieving transactions for today (10-21-2026)
+2026-10-21 18:33:51.128 [INF] ✔ PASSED: Transfer to non-existent account is rejected
+2026-10-21 18:33:51.129 [INF] ▶ Scenario: Zero deposit amount is rejected
+2026-10-21 18:33:51.129 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:51.130 [INF] ✔ PASSED: Single date returns only transactions for that date
+2026-10-21 18:33:51.451 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:51.452 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:51.799 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:51.800 [INF]   ➤ Attempting deposit of invalid amount 0
+2026-10-21 18:33:52.123 [ERR] HTTP request to /deposit threw an exception
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: S. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ParaBank.API.Tests.Helpers.ApiClient.ExecuteAsync[T](RestRequest request) in d:\Projects\Project2\src\ParaBank.API.Tests\Helpers\ApiClient.cs:line 85
+2026-10-21 18:33:52.126 [WRN] ✘ FAILED: Zero deposit amount is rejected — Expected _lastStatusCode to be between 400 and 500 because invalid operations should be rejected with a 4xx client error, but found 0.
+2026-10-21 18:33:52.127 [INF] ▶ Scenario: Overdraft withdrawal is rejected
+2026-10-21 18:33:52.127 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:52.470 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:52.471 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:52.798 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:52.800 [INF]   ➤ Attempting overdraft withdrawal
+2026-10-21 18:33:53.124 [ERR] HTTP request to /withdraw threw an exception
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: S. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ParaBank.API.Tests.Helpers.ApiClient.ExecuteAsync[T](RestRequest request) in d:\Projects\Project2\src\ParaBank.API.Tests\Helpers\ApiClient.cs:line 85
+2026-10-21 18:33:53.127 [WRN] ✘ FAILED: Overdraft withdrawal is rejected — Expected _lastStatusCode to be between 400 and 500 because invalid operations should be rejected with a 4xx client error, but found 0.
+2026-10-21 18:33:53.128 [INF] ▶ Scenario: Request with string account ID returns error
+2026-10-21 18:33:53.128 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:33:53.464 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:33:53.466 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:33:53.783 [INF]   ➤ Found 12 accounts
+2026-10-21 18:33:53.784 [INF]   ➤ Requesting account info for accountId: invalid_id
+2026-10-21 18:33:54.101 [INF] ✔ PASSED: Request with string account ID returns error
+2026-10-21 18:33:54.106 [INF] === ParaBank API Test Run Completed ===
+2026-10-21 18:36:11.584 [INF] Logger initialised at "Information" level
+2026-10-21 18:36:11.605 [INF] === ParaBank API Test Run Started ===
+2026-10-21 18:36:11.660 [INF] ▶ Scenario: Full customer journey - login, transact, and retrieve by date range
+2026-10-21 18:36:11.660 [INF] ▶ Scenario: User cannot access another user's account data
+2026-10-21 18:36:11.660 [INF] ▶ Scenario: Negative deposit amount is rejected
+2026-10-21 18:36:11.660 [INF] ▶ Scenario: Money transfer reduces source and increases target by exact amount
+2026-10-21 18:36:11.660 [INF] ▶ Scenario: All transaction endpoints return consistent data for today
+2026-10-21 18:36:11.660 [INF] ▶ Scenario: New savings account creation and basic operations
+2026-10-21 18:36:11.660 [INF] ▶ Scenario: Bill payment is processed and returns correct payee details
+2026-10-21 18:36:11.660 [INF] ▶ Scenario: Account data integrity is maintained after failed operation
+2026-10-21 18:36:11.660 [INF] ▶ Scenario: Transaction endpoint responds within SLA
+2026-10-21 18:36:11.660 [INF] ▶ Scenario: Future date range returns empty array
+2026-10-21 18:36:11.678 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:11.678 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:11.678 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:11.678 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:11.678 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:11.678 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:11.678 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:11.678 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:11.678 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:11.678 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:12.738 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:12.738 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:12.738 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:12.742 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:12.742 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:12.747 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:12.747 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:12.747 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:12.747 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:12.747 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:12.768 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:12.768 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:12.768 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:12.770 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:12.770 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:12.770 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:12.782 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:12.782 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:12.784 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:12.784 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:13.082 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:13.096 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:13.096 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:13.099 [INF]   ➤ Fetching transactions from 01-01-2099 to 12-31-2099 for account 12345
+2026-10-21 18:36:13.103 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:13.105 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:13.105 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:13.106 [INF]   ➤ Creating savings account for customer 12212
+2026-10-21 18:36:13.106 [INF]   ➤ Logging in as second user 'jane'
+2026-10-21 18:36:13.122 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:13.126 [INF]   ➤ Measuring transaction list response time
+2026-10-21 18:36:13.138 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:13.138 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:13.140 [INF]   ➤ Paying bill of $75.00 to 'Electric Company' from account 12345
+2026-10-21 18:36:13.167 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:13.169 [INF]   ➤ Attempting deposit of invalid amount -100
+2026-10-21 18:36:13.450 [INF]   ➤ Depositing $25.00 to account 12345
+2026-10-21 18:36:13.458 [INF]   ➤ User 12212 attempting to access account 0
+2026-10-21 18:36:13.466 [INF]   ➤ Balance before invalid op: -$1,110,002,658.00
+2026-10-21 18:36:13.467 [INF]   ➤ Attempting invalid (overdraft) withdrawal
+2026-10-21 18:36:13.483 [INF]   ➤ ✓ Response time 354ms < 5000ms
+2026-10-21 18:36:13.484 [INF] ✔ PASSED: Future date range returns empty array
+2026-10-21 18:36:13.493 [INF] ✔ PASSED: Transaction endpoint responds within SLA
+2026-10-21 18:36:13.498 [INF] ▶ Scenario: Account list response contains required contract fields
+2026-10-21 18:36:13.498 [INF] ▶ Scenario: Month and year boundary spanning
+2026-10-21 18:36:13.498 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:13.498 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:13.502 [INF]   ➤ Depositing $100.00 to account 0
+2026-10-21 18:36:13.511 [WRN] ✘ FAILED: New savings account creation and basic operations — Expected response.StatusCode to be between 200 and 299 because create savings account should return a success status code, but found 404.
+2026-10-21 18:36:13.520 [ERR] HTTP request to /deposit threw an exception
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: S. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ParaBank.API.Tests.Helpers.ApiClient.ExecuteAsync[T](RestRequest request) in d:\Projects\Project2\src\ParaBank.API.Tests\Helpers\ApiClient.cs:line 85
+2026-10-21 18:36:13.522 [INF] ✔ PASSED: Bill payment is processed and returns correct payee details
+2026-10-21 18:36:13.524 [WRN] ✘ FAILED: Negative deposit amount is rejected — Expected _lastStatusCode to be between 400 and 500 because invalid operations should be rejected with a 4xx client error, but found 0.
+2026-10-21 18:36:13.526 [INF] ▶ Scenario: Special characters in username are safely rejected
+2026-10-21 18:36:13.527 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:13.755 [INF]   ➤ Transferring $50.00 from 0 to 0
+2026-10-21 18:36:13.803 [ERR] HTTP request to /deposit threw an exception
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: S. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ParaBank.API.Tests.Helpers.ApiClient.ExecuteAsync[T](RestRequest request) in d:\Projects\Project2\src\ParaBank.API.Tests\Helpers\ApiClient.cs:line 85
+2026-10-21 18:36:13.807 [WRN] ✘ FAILED: All transaction endpoints return consistent data for today — Expected _lastResponseStatusCode to be 200 because deposit should succeed with HTTP 200, but found 0 (difference of -200).
+2026-10-21 18:36:13.812 [ERR] HTTP request to /withdraw threw an exception
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: S. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ParaBank.API.Tests.Helpers.ApiClient.ExecuteAsync[T](RestRequest request) in d:\Projects\Project2\src\ParaBank.API.Tests\Helpers\ApiClient.cs:line 85
+2026-10-21 18:36:13.815 [INF] ✔ PASSED: User cannot access another user's account data
+2026-10-21 18:36:13.869 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:13.870 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:13.871 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:13.871 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:13.871 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:13.872 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:13.917 [WRN] ✘ FAILED: Full customer journey - login, transact, and retrieve by date range — Expected _lastResponseStatusCode to be 200 because deposit should succeed with HTTP 200, but found 400 (difference of 200).
+2026-10-21 18:36:14.084 [WRN] ✘ FAILED: Money transfer reduces source and increases target by exact amount — Expected _transferStatusCode to be 200 because transfer should succeed, but found 400 (difference of 200).
+2026-10-21 18:36:14.160 [WRN] ✘ FAILED: Account data integrity is maintained after failed operation — Expected response.StatusCode to be between 200 and 299 because account integrity check should return a success status code, but found 400.
+2026-10-21 18:36:14.164 [INF] ▶ Scenario: Multiple failed operations do not accumulate errors
+2026-10-21 18:36:14.164 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:14.223 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:14.231 [INF]   ➤ Fetching transactions from 12-31-2023 to 01-01-2024 for account 12345
+2026-10-21 18:36:14.234 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:14.236 [INF]   ➤ Measuring account list response time
+2026-10-21 18:36:14.246 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:14.249 [INF]   ➤ Attempting login with invalid credentials '<script>alert(1)</script>'
+2026-10-21 18:36:14.459 [INF] ✔ PASSED: Special characters in username are safely rejected
+2026-10-21 18:36:14.461 [INF] ▶ Scenario: Missing amount in deposit returns error
+2026-10-21 18:36:14.461 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:14.520 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:14.522 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:14.584 [INF]   ➤ Response time: 347ms
+2026-10-21 18:36:14.587 [WRN] ✘ FAILED: Account list response contains required contract fields — Expected _lastRawContent "Could not find customer #0" to contain ""id"" because account response must contain 'id'.
+2026-10-21 18:36:14.588 [INF] ▶ Scenario: Account list endpoint consistently responds under load
+2026-10-21 18:36:14.589 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:14.595 [INF] ✔ PASSED: Month and year boundary spanning
+2026-10-21 18:36:14.596 [INF] ▶ Scenario: Reversed date range handling
+2026-10-21 18:36:14.596 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:14.806 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:14.808 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:14.848 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:14.936 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:14.938 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:14.941 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:14.942 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:15.158 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:15.159 [INF]   ➤ Attempting deposit of invalid amount -1
+2026-10-21 18:36:15.179 [INF]   ➤ Balance before invalid op: -$1,210,002,807.00
+2026-10-21 18:36:15.179 [INF]   ➤ Attempting invalid (overdraft) withdrawal
+2026-10-21 18:36:15.287 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:15.287 [INF]   ➤ Measuring account list response time
+2026-10-21 18:36:15.293 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:15.294 [INF]   ➤ Fetching transactions from 12-31-2024 to 01-01-2024 for account 12345
+2026-10-21 18:36:15.488 [ERR] HTTP request to /deposit threw an exception
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: S. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ParaBank.API.Tests.Helpers.ApiClient.ExecuteAsync[T](RestRequest request) in d:\Projects\Project2\src\ParaBank.API.Tests\Helpers\ApiClient.cs:line 85
+2026-10-21 18:36:15.491 [WRN] ✘ FAILED: Missing amount in deposit returns error — Expected _lastStatusCode to be between 400 and 500 because invalid operations should be rejected with a 4xx client error, but found 0.
+2026-10-21 18:36:15.493 [INF] ▶ Scenario: Request with non-existent account ID returns error
+2026-10-21 18:36:15.493 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:15.518 [ERR] HTTP request to /withdraw threw an exception
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: S. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ParaBank.API.Tests.Helpers.ApiClient.ExecuteAsync[T](RestRequest request) in d:\Projects\Project2\src\ParaBank.API.Tests\Helpers\ApiClient.cs:line 85
+2026-10-21 18:36:15.518 [INF]   ➤ Attempting invalid (overdraft) withdrawal
+2026-10-21 18:36:15.634 [INF]   ➤ Response time: 347ms
+2026-10-21 18:36:15.635 [INF]   ➤ ✓ Response time 347ms < 10000ms
+2026-10-21 18:36:15.636 [INF] ✔ PASSED: Account list endpoint consistently responds under load
+2026-10-21 18:36:15.637 [INF] ▶ Scenario: Transaction list returns valid JSON contract
+2026-10-21 18:36:15.638 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:15.673 [INF] ✔ PASSED: Reversed date range handling
+2026-10-21 18:36:15.675 [INF] ▶ Scenario: Range includes all dates within boundaries
+2026-10-21 18:36:15.675 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:15.829 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:15.831 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:15.981 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:15.983 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:16.031 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:16.033 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:16.165 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:16.166 [INF]   ➤ Requesting account info for accountId: 99999999
+2026-10-21 18:36:16.217 [WRN] ✘ FAILED: Multiple failed operations do not accumulate errors — Expected _balanceAfterInvalidOp to be -1210002807.00M because a failed invalid operation must not modify the account balance, but found 0M (difference of 1210002807.00).
+2026-10-21 18:36:16.219 [INF] ▶ Scenario: Failed overdraft withdrawal leaves balance unchanged
+2026-10-21 18:36:16.220 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:16.327 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:16.327 [INF]   ➤ Measuring transaction list response time
+2026-10-21 18:36:16.381 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:16.382 [INF]   ➤ Fetching transactions from 01-01-2024 to 12-31-2024 for account 12345
+2026-10-21 18:36:16.500 [INF] ✔ PASSED: Request with non-existent account ID returns error
+2026-10-21 18:36:16.502 [INF] ▶ Scenario: Invalid login credentials are rejected
+2026-10-21 18:36:16.502 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:16.548 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:16.550 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:16.670 [INF] ✔ PASSED: Transaction list returns valid JSON contract
+2026-10-21 18:36:16.672 [INF] ▶ Scenario: Account list endpoint responds within SLA
+2026-10-21 18:36:16.672 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:16.722 [INF] ✔ PASSED: Range includes all dates within boundaries
+2026-10-21 18:36:16.724 [INF] ▶ Scenario: Boundaries are inclusive
+2026-10-21 18:36:16.724 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:16.847 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:16.849 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:16.897 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:17.020 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:17.021 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:17.060 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:17.061 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:17.189 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:17.190 [INF]   ➤ Attempting login with invalid credentials 'invalid_user'
+2026-10-21 18:36:17.227 [INF]   ➤ Balance before invalid op: -$1,310,002,807.00
+2026-10-21 18:36:17.227 [INF]   ➤ Attempting invalid (overdraft) withdrawal
+2026-10-21 18:36:17.365 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:17.366 [INF]   ➤ Measuring account list response time
+2026-10-21 18:36:17.403 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:17.404 [INF]   ➤ Fetching transactions from 01-01-2024 to 01-01-2024 for account 12345
+2026-10-21 18:36:17.515 [INF] ✔ PASSED: Invalid login credentials are rejected
+2026-10-21 18:36:17.516 [INF] ▶ Scenario: Extremely large deposit amount is handled
+2026-10-21 18:36:17.516 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:17.574 [ERR] HTTP request to /withdraw threw an exception
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: S. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ParaBank.API.Tests.Helpers.ApiClient.ExecuteAsync[T](RestRequest request) in d:\Projects\Project2\src\ParaBank.API.Tests\Helpers\ApiClient.cs:line 85
+2026-10-21 18:36:17.717 [INF]   ➤ Response time: 351ms
+2026-10-21 18:36:17.717 [INF]   ➤ ✓ Response time 351ms < 5000ms
+2026-10-21 18:36:17.719 [INF] ✔ PASSED: Account list endpoint responds within SLA
+2026-10-21 18:36:17.745 [INF] ✔ PASSED: Boundaries are inclusive
+2026-10-21 18:36:17.747 [INF] ▶ Scenario: No duplicate transactions
+2026-10-21 18:36:17.747 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:17.845 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:17.846 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:17.908 [WRN] ✘ FAILED: Failed overdraft withdrawal leaves balance unchanged — Expected _balanceAfterInvalidOp to be -1310002807.00M because a failed invalid operation must not modify the account balance, but found 0M (difference of 1310002807.00).
+2026-10-21 18:36:18.094 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:18.096 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:18.209 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:18.210 [INF]   ➤ Attempting deposit of invalid amount -999999999
+2026-10-21 18:36:18.465 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:18.466 [INF]   ➤ Retrieving transactions for today (10-21-2026)
+2026-10-21 18:36:18.538 [ERR] HTTP request to /deposit threw an exception
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: S. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ParaBank.API.Tests.Helpers.ApiClient.ExecuteAsync[T](RestRequest request) in d:\Projects\Project2\src\ParaBank.API.Tests\Helpers\ApiClient.cs:line 85
+2026-10-21 18:36:18.544 [WRN] ✘ FAILED: Extremely large deposit amount is handled — Expected _lastStatusCode to be between 400 and 500 because invalid operations should be rejected with a 4xx client error, but found 0.
+2026-10-21 18:36:18.546 [INF] ▶ Scenario: SQL injection in login username is safely rejected
+2026-10-21 18:36:18.547 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:18.836 [INF] ✔ PASSED: No duplicate transactions
+2026-10-21 18:36:18.838 [INF] ▶ Scenario: Empty range returns empty array
+2026-10-21 18:36:18.838 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:18.871 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:18.873 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:19.187 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:19.188 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:19.219 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:19.219 [INF]   ➤ Attempting login with invalid credentials 'john' OR '1'='1'
+2026-10-21 18:36:19.399 [INF] ✔ PASSED: SQL injection in login username is safely rejected
+2026-10-21 18:36:19.400 [INF] ▶ Scenario: Transfer to non-existent account is rejected
+2026-10-21 18:36:19.401 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:19.527 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:19.527 [INF]   ➤ Fetching transactions from 01-01-2000 to 01-02-2000 for account 12345
+2026-10-21 18:36:19.738 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:19.739 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:19.886 [INF] ✔ PASSED: Empty range returns empty array
+2026-10-21 18:36:19.887 [INF] ▶ Scenario: Single date returns only transactions for that date
+2026-10-21 18:36:19.888 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:20.076 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:20.078 [INF]   ➤ Attempting transfer to non-existent account
+2026-10-21 18:36:20.228 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:20.229 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:20.414 [INF] ✔ PASSED: Transfer to non-existent account is rejected
+2026-10-21 18:36:20.416 [INF] ▶ Scenario: Zero deposit amount is rejected
+2026-10-21 18:36:20.416 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:20.587 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:20.587 [INF]   ➤ Retrieving transactions for today (10-21-2026)
+2026-10-21 18:36:20.744 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:20.745 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:20.941 [INF] ✔ PASSED: Single date returns only transactions for that date
+2026-10-21 18:36:21.080 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:21.083 [INF]   ➤ Attempting deposit of invalid amount 0
+2026-10-21 18:36:21.410 [ERR] HTTP request to /deposit threw an exception
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: S. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ParaBank.API.Tests.Helpers.ApiClient.ExecuteAsync[T](RestRequest request) in d:\Projects\Project2\src\ParaBank.API.Tests\Helpers\ApiClient.cs:line 85
+2026-10-21 18:36:21.412 [WRN] ✘ FAILED: Zero deposit amount is rejected — Expected _lastStatusCode to be between 400 and 500 because invalid operations should be rejected with a 4xx client error, but found 0.
+2026-10-21 18:36:21.418 [INF] ▶ Scenario: Overdraft withdrawal is rejected
+2026-10-21 18:36:21.419 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:21.750 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:21.751 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:22.085 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:22.087 [INF]   ➤ Attempting overdraft withdrawal
+2026-10-21 18:36:22.425 [ERR] HTTP request to /withdraw threw an exception
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: S. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ParaBank.API.Tests.Helpers.ApiClient.ExecuteAsync[T](RestRequest request) in d:\Projects\Project2\src\ParaBank.API.Tests\Helpers\ApiClient.cs:line 85
+2026-10-21 18:36:22.428 [WRN] ✘ FAILED: Overdraft withdrawal is rejected — Expected _lastStatusCode to be between 400 and 500 because invalid operations should be rejected with a 4xx client error, but found 0.
+2026-10-21 18:36:22.429 [INF] ▶ Scenario: Request with string account ID returns error
+2026-10-21 18:36:22.429 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:36:22.761 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:36:22.763 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:36:23.121 [INF]   ➤ Found 12 accounts
+2026-10-21 18:36:23.122 [INF]   ➤ Requesting account info for accountId: invalid_id
+2026-10-21 18:36:23.452 [INF] ✔ PASSED: Request with string account ID returns error
+2026-10-21 18:36:23.458 [INF] === ParaBank API Test Run Completed ===
+2026-10-21 18:50:37.645 [INF] Logger initialised at "Information" level
+2026-10-21 18:50:37.664 [INF] === ParaBank API Test Run Started ===
+2026-10-21 18:50:37.706 [INF] ▶ Scenario: Account data integrity is maintained after failed operation
+2026-10-21 18:50:37.726 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:50:38.789 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:50:38.797 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:50:39.147 [INF]   ➤ Found 11 accounts
+2026-10-21 18:50:39.498 [INF]   ➤ Balance before invalid op: -$2,300.00
+2026-10-21 18:50:39.500 [INF]   ➤ Attempting invalid withdrawal
+2026-10-21 18:50:40.190 [INF] ✔ PASSED: Account data integrity is maintained after failed operation
+2026-10-21 18:50:40.203 [INF] ▶ Scenario: Multiple failed operations do not accumulate errors
+2026-10-21 18:50:40.203 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:50:40.528 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:50:40.543 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:50:40.892 [INF]   ➤ Found 11 accounts
+2026-10-21 18:50:41.222 [INF]   ➤ Balance before invalid op: -$2,300.00
+2026-10-21 18:50:41.222 [INF]   ➤ Attempting invalid withdrawal
+2026-10-21 18:50:41.582 [INF]   ➤ Attempting invalid withdrawal
+2026-10-21 18:50:42.264 [INF] ✔ PASSED: Multiple failed operations do not accumulate errors
+2026-10-21 18:50:42.266 [INF] ▶ Scenario: Failed overdraft withdrawal leaves balance unchanged
+2026-10-21 18:50:42.266 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:50:42.601 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:50:42.602 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:50:42.927 [INF]   ➤ Found 11 accounts
+2026-10-21 18:50:43.273 [INF]   ➤ Balance before invalid op: -$2,300.00
+2026-10-21 18:50:43.274 [INF]   ➤ Attempting invalid withdrawal
+2026-10-21 18:50:43.928 [INF] ✔ PASSED: Failed overdraft withdrawal leaves balance unchanged
+2026-10-21 18:50:43.935 [INF] ▶ Scenario: Transaction endpoint responds within SLA
+2026-10-21 18:50:43.935 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:50:44.260 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:50:44.262 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:50:44.624 [INF]   ➤ Found 11 accounts
+2026-10-21 18:50:44.629 [INF]   ➤ Measuring transaction list response time
+2026-10-21 18:50:44.967 [INF]   ➤ ✓ Response time 335ms < 5000ms
+2026-10-21 18:50:44.974 [INF] ✔ PASSED: Transaction endpoint responds within SLA
+2026-10-21 18:50:44.975 [INF] ▶ Scenario: Account list response contains required contract fields
+2026-10-21 18:50:44.976 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:50:45.315 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:50:45.317 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:50:45.648 [INF]   ➤ Found 11 accounts
+2026-10-21 18:50:45.650 [INF]   ➤ Measuring account list response time
+2026-10-21 18:50:45.978 [INF]   ➤ Response time: 327ms
+2026-10-21 18:50:45.980 [INF] ✔ PASSED: Account list response contains required contract fields
+2026-10-21 18:50:45.982 [INF] ▶ Scenario: Account list endpoint consistently responds under load
+2026-10-21 18:50:45.982 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:50:46.310 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:50:46.311 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:50:46.643 [INF]   ➤ Found 11 accounts
+2026-10-21 18:50:46.644 [INF]   ➤ Measuring account list response time
+2026-10-21 18:50:46.976 [INF]   ➤ Response time: 332ms
+2026-10-21 18:50:46.977 [INF]   ➤ ✓ Response time 332ms < 10000ms
+2026-10-21 18:50:46.978 [INF] ✔ PASSED: Account list endpoint consistently responds under load
+2026-10-21 18:50:46.979 [INF] ▶ Scenario: Transaction list returns valid JSON contract
+2026-10-21 18:50:46.979 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:50:47.308 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:50:47.310 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:50:47.657 [INF]   ➤ Found 11 accounts
+2026-10-21 18:50:47.658 [INF]   ➤ Measuring transaction list response time
+2026-10-21 18:50:47.990 [INF] ✔ PASSED: Transaction list returns valid JSON contract
+2026-10-21 18:50:47.991 [INF] ▶ Scenario: Account list endpoint responds within SLA
+2026-10-21 18:50:47.992 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:50:48.328 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:50:48.330 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:50:48.660 [INF]   ➤ Found 11 accounts
+2026-10-21 18:50:48.661 [INF]   ➤ Measuring account list response time
+2026-10-21 18:50:48.995 [INF]   ➤ Response time: 334ms
+2026-10-21 18:50:48.996 [INF]   ➤ ✓ Response time 334ms < 5000ms
+2026-10-21 18:50:49.000 [INF] ✔ PASSED: Account list endpoint responds within SLA
+2026-10-21 18:50:49.003 [INF] ▶ Scenario: Negative deposit amount is rejected
+2026-10-21 18:50:49.004 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:50:49.337 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:50:49.339 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:50:49.667 [INF]   ➤ Found 11 accounts
+2026-10-21 18:50:49.672 [INF]   ➤ Attempting deposit of invalid amount -100
+2026-10-21 18:50:50.008 [INF] ✔ PASSED: Negative deposit amount is rejected
+2026-10-21 18:50:50.009 [INF] ▶ Scenario: Special characters in username are safely rejected
+2026-10-21 18:50:50.009 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:50:50.338 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:50:50.340 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:50:50.673 [INF]   ➤ Found 11 accounts
+2026-10-21 18:50:50.675 [INF]   ➤ Attempting login with invalid credentials '<script>alert(1)</script>'
+2026-10-21 18:50:50.846 [INF] ✔ PASSED: Special characters in username are safely rejected
+2026-10-21 18:50:50.848 [INF] ▶ Scenario: Missing amount in deposit returns error
+2026-10-21 18:50:50.848 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:50:51.891 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:50:51.892 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:50:52.255 [INF]   ➤ Found 11 accounts
+2026-10-21 18:50:52.256 [INF]   ➤ Attempting deposit of invalid amount -1
+2026-10-21 18:50:52.612 [INF] ✔ PASSED: Missing amount in deposit returns error
+2026-10-21 18:50:52.614 [INF] ▶ Scenario: Request with non-existent account ID returns error
+2026-10-21 18:50:52.614 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:50:52.954 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:50:52.956 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:50:53.307 [INF]   ➤ Found 11 accounts
+2026-10-21 18:50:53.311 [INF]   ➤ Requesting account info for accountId: 99999999
+2026-10-21 18:50:53.665 [INF] ✔ PASSED: Request with non-existent account ID returns error
+2026-10-21 18:50:53.666 [INF] ▶ Scenario: Invalid login credentials are rejected
+2026-10-21 18:50:53.668 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:50:54.020 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:50:54.022 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:50:54.372 [INF]   ➤ Found 11 accounts
+2026-10-21 18:50:54.373 [INF]   ➤ Attempting login with invalid credentials 'invalid_user'
+2026-10-21 18:50:54.706 [INF] ✔ PASSED: Invalid login credentials are rejected
+2026-10-21 18:50:54.708 [INF] ▶ Scenario: Extremely large deposit amount is handled
+2026-10-21 18:50:54.708 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:50:55.062 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:50:55.064 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:50:55.397 [INF]   ➤ Found 11 accounts
+2026-10-21 18:50:55.397 [INF]   ➤ Attempting deposit of invalid amount -999999999
+2026-10-21 18:50:55.753 [INF] ✔ PASSED: Extremely large deposit amount is handled
+2026-10-21 18:50:55.755 [INF] ▶ Scenario: SQL injection in login username is safely rejected
+2026-10-21 18:50:55.755 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:50:56.124 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:50:56.126 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:50:56.473 [INF]   ➤ Found 11 accounts
+2026-10-21 18:50:56.474 [INF]   ➤ Attempting login with invalid credentials 'john' OR '1'='1'
+2026-10-21 18:50:56.651 [INF] ✔ PASSED: SQL injection in login username is safely rejected
+2026-10-21 18:50:56.652 [INF] ▶ Scenario: Transfer to non-existent account is rejected
+2026-10-21 18:50:56.653 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:50:57.664 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:50:57.666 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:50:58.025 [INF]   ➤ Found 11 accounts
+2026-10-21 18:50:58.027 [INF]   ➤ Attempting transfer to non-existent account
+2026-10-21 18:50:58.371 [INF] ✔ PASSED: Transfer to non-existent account is rejected
+2026-10-21 18:50:58.372 [INF] ▶ Scenario: Zero deposit amount is rejected
+2026-10-21 18:50:58.372 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:50:58.703 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:50:58.705 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:50:59.064 [INF]   ➤ Found 11 accounts
+2026-10-21 18:50:59.065 [INF]   ➤ Attempting deposit of invalid amount 0
+2026-10-21 18:50:59.408 [INF] ✔ PASSED: Zero deposit amount is rejected
+2026-10-21 18:50:59.410 [INF] ▶ Scenario: Overdraft withdrawal is rejected
+2026-10-21 18:50:59.410 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:50:59.761 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:50:59.763 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:51:00.111 [INF]   ➤ Found 11 accounts
+2026-10-21 18:51:00.113 [INF]   ➤ Attempting overdraft withdrawal
+2026-10-21 18:51:00.483 [INF] ✔ PASSED: Overdraft withdrawal is rejected
+2026-10-21 18:51:00.484 [INF] ▶ Scenario: Request with string account ID returns error
+2026-10-21 18:51:00.485 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:51:00.834 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:51:00.835 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:51:01.251 [INF]   ➤ Found 11 accounts
+2026-10-21 18:51:01.252 [INF]   ➤ Requesting account info for accountId: invalid_id
+2026-10-21 18:51:01.623 [INF] ✔ PASSED: Request with string account ID returns error
+2026-10-21 18:51:01.626 [INF] ▶ Scenario: All transaction endpoints return consistent data for today
+2026-10-21 18:51:01.626 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:51:02.035 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:51:02.036 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:51:02.403 [INF]   ➤ Found 11 accounts
+2026-10-21 18:51:02.779 [INF]   ➤ Depositing $25.00 to account 12345
+2026-10-21 18:51:03.140 [INF]   ➤ Fetching via /fromDate-toDate endpoint
+2026-10-21 18:51:03.496 [INF]   ➤ Fetching via /onDate endpoint
+2026-10-21 18:51:03.884 [INF]   ➤ Fetching via /month endpoint
+2026-10-21 18:51:04.562 [INF] ✔ PASSED: All transaction endpoints return consistent data for today
+2026-10-21 18:51:04.566 [INF] ▶ Scenario: Bill payment is processed and returns correct payee details
+2026-10-21 18:51:04.566 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:51:04.903 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:51:04.906 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:51:05.272 [INF]   ➤ Found 11 accounts
+2026-10-21 18:51:05.274 [INF]   ➤ Paying bill of $75.00 to 'Electric Company' from account 12345
+2026-10-21 18:51:05.655 [INF] ✔ PASSED: Bill payment is processed and returns correct payee details
+2026-10-21 18:51:05.658 [INF] ▶ Scenario: User cannot access another user's account data
+2026-10-21 18:51:05.658 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:51:06.005 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:51:06.007 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:51:06.358 [INF]   ➤ Found 11 accounts
+2026-10-21 18:51:06.360 [INF]   ➤ Logging in as second user 'jane'
+2026-10-21 18:51:06.704 [INF]   ➤ User 12212 attempting to access account 0
+2026-10-21 18:51:07.068 [INF] ✔ PASSED: User cannot access another user's account data
+2026-10-21 18:51:07.072 [INF] ▶ Scenario: Future date range returns empty array
+2026-10-21 18:51:07.073 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:51:07.418 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:51:07.420 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:51:07.772 [INF]   ➤ Found 11 accounts
+2026-10-21 18:51:07.774 [INF]   ➤ Fetching transactions from 01-01-2099 to 12-31-2099 for account 12345
+2026-10-21 18:51:08.145 [INF] ✔ PASSED: Future date range returns empty array
+2026-10-21 18:51:08.146 [INF] ▶ Scenario: Month and year boundary spanning
+2026-10-21 18:51:08.147 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:51:08.527 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:51:08.528 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:51:08.860 [INF]   ➤ Found 11 accounts
+2026-10-21 18:51:08.861 [INF]   ➤ Fetching transactions from 12-31-2023 to 01-01-2024 for account 12345
+2026-10-21 18:51:09.205 [INF] ✔ PASSED: Month and year boundary spanning
+2026-10-21 18:51:09.207 [INF] ▶ Scenario: Reversed date range handling
+2026-10-21 18:51:09.207 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:51:09.537 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:51:09.539 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:51:09.901 [INF]   ➤ Found 11 accounts
+2026-10-21 18:51:09.902 [INF]   ➤ Fetching transactions from 12-31-2024 to 01-01-2024 for account 12345
+2026-10-21 18:51:10.238 [INF] ✔ PASSED: Reversed date range handling
+2026-10-21 18:51:10.240 [INF] ▶ Scenario: Range includes all dates within boundaries
+2026-10-21 18:51:10.240 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:51:10.577 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:51:10.578 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:51:10.939 [INF]   ➤ Found 11 accounts
+2026-10-21 18:51:10.940 [INF]   ➤ Fetching transactions from 01-01-2024 to 12-31-2024 for account 12345
+2026-10-21 18:51:11.277 [INF] ✔ PASSED: Range includes all dates within boundaries
+2026-10-21 18:51:11.278 [INF] ▶ Scenario: Boundaries are inclusive
+2026-10-21 18:51:11.278 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:51:11.613 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:51:11.615 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:51:11.957 [INF]   ➤ Found 11 accounts
+2026-10-21 18:51:11.958 [INF]   ➤ Fetching transactions from 01-01-2024 to 01-01-2024 for account 12345
+2026-10-21 18:51:12.291 [INF] ✔ PASSED: Boundaries are inclusive
+2026-10-21 18:51:12.292 [INF] ▶ Scenario: No duplicate transactions
+2026-10-21 18:51:12.292 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:51:12.624 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:51:12.627 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:51:12.955 [INF]   ➤ Found 11 accounts
+2026-10-21 18:51:12.957 [INF]   ➤ Retrieving transactions for today (10-21-2026)
+2026-10-21 18:51:13.293 [INF] ✔ PASSED: No duplicate transactions
+2026-10-21 18:51:13.294 [INF] ▶ Scenario: Empty range returns empty array
+2026-10-21 18:51:13.294 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:51:13.626 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:51:13.627 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:51:13.954 [INF]   ➤ Found 11 accounts
+2026-10-21 18:51:13.955 [INF]   ➤ Fetching transactions from 01-01-2000 to 01-02-2000 for account 12345
+2026-10-21 18:51:14.284 [INF] ✔ PASSED: Empty range returns empty array
+2026-10-21 18:51:14.286 [INF] ▶ Scenario: Single date returns only transactions for that date
+2026-10-21 18:51:14.286 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:51:14.617 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:51:14.619 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:51:14.950 [INF]   ➤ Found 11 accounts
+2026-10-21 18:51:14.951 [INF]   ➤ Retrieving transactions for today (10-21-2026)
+2026-10-21 18:51:15.286 [INF] ✔ PASSED: Single date returns only transactions for that date
+2026-10-21 18:51:15.291 [INF] ▶ Scenario: New savings account creation and basic operations
+2026-10-21 18:51:15.291 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:51:15.627 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:51:15.630 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:51:15.961 [INF]   ➤ Found 11 accounts
+2026-10-21 18:51:15.962 [INF]   ➤ Creating savings account for customer 12212
+2026-10-21 18:51:16.299 [INF]   ➤ Created savings account: 13677
+2026-10-21 18:51:16.634 [INF]   ➤ Depositing to new account 13677
+2026-10-21 18:51:17.335 [INF] ✔ PASSED: New savings account creation and basic operations
+2026-10-21 18:51:17.338 [INF] ▶ Scenario: Full customer journey - login, transact, and retrieve by date range
+2026-10-21 18:51:17.338 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:51:17.668 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:51:17.670 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:51:18.001 [INF]   ➤ Found 12 accounts
+2026-10-21 18:51:18.343 [INF]   ➤ Depositing $100.00 to account 12345
+2026-10-21 18:51:18.676 [INF]   ➤ Withdrawing $40.00 from account 12345
+2026-10-21 18:51:19.014 [INF]   ➤ Fetching balance for account 12345
+2026-10-21 18:51:19.345 [INF]   ➤ Current balance: -$2,490.00
+2026-10-21 18:51:19.347 [INF]   ➤ Retrieving transactions for today (10-21-2026)
+2026-10-21 18:51:19.688 [INF] ✔ PASSED: Full customer journey - login, transact, and retrieve by date range
+2026-10-21 18:51:19.691 [INF] ▶ Scenario: Money transfer reduces source and increases target by exact amount
+2026-10-21 18:51:19.691 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:51:20.033 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:51:20.035 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:51:20.368 [INF]   ➤ Found 12 accounts
+2026-10-21 18:51:21.049 [INF]   ➤ Transferring $50.00 from 12345 to 12456
+2026-10-21 18:51:22.044 [INF] ✔ PASSED: Money transfer reduces source and increases target by exact amount
+2026-10-21 18:51:22.049 [INF] === ParaBank API Test Run Completed ===
+2026-10-21 18:54:37.938 [INF] Logger initialised at "Information" level
+2026-10-21 18:54:37.957 [INF] === ParaBank API Test Run Started ===
+2026-10-21 18:54:37.997 [INF] ▶ Scenario: Negative deposit amount is rejected
+2026-10-21 18:54:38.010 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:54:39.112 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:54:39.119 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:54:39.507 [INF]   ➤ Found 13 accounts
+2026-10-21 18:54:39.511 [INF]   ➤ Attempting deposit of invalid amount -100
+2026-10-21 18:54:39.896 [INF] ✔ PASSED: Negative deposit amount is rejected
+2026-10-21 18:54:39.905 [INF] ▶ Scenario: Special characters in username are safely rejected
+2026-10-21 18:54:39.906 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:54:40.302 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:54:40.304 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:54:40.664 [INF]   ➤ Found 13 accounts
+2026-10-21 18:54:40.665 [INF]   ➤ Attempting login with invalid credentials '<script>alert(1)</script>'
+2026-10-21 18:54:40.855 [INF] ✔ PASSED: Special characters in username are safely rejected
+2026-10-21 18:54:40.856 [INF] ▶ Scenario: Missing amount in deposit returns error
+2026-10-21 18:54:40.856 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:54:41.886 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:54:41.887 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:54:42.250 [INF]   ➤ Found 13 accounts
+2026-10-21 18:54:42.251 [INF]   ➤ Attempting deposit of invalid amount -1
+2026-10-21 18:54:42.615 [INF] ✔ PASSED: Missing amount in deposit returns error
+2026-10-21 18:54:42.616 [INF] ▶ Scenario: Request with non-existent account ID returns error
+2026-10-21 18:54:42.616 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:54:42.974 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:54:42.976 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:54:43.313 [INF]   ➤ Found 13 accounts
+2026-10-21 18:54:43.315 [INF]   ➤ Requesting account info for accountId: 99999999
+2026-10-21 18:54:43.668 [INF] ✔ PASSED: Request with non-existent account ID returns error
+2026-10-21 18:54:43.669 [INF] ▶ Scenario: Invalid login credentials are rejected
+2026-10-21 18:54:43.670 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:54:44.095 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:54:44.097 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:54:44.579 [INF]   ➤ Found 13 accounts
+2026-10-21 18:54:44.581 [INF]   ➤ Attempting login with invalid credentials 'invalid_user'
+2026-10-21 18:54:44.922 [INF] ✔ PASSED: Invalid login credentials are rejected
+2026-10-21 18:54:44.923 [INF] ▶ Scenario: Extremely large deposit amount is handled
+2026-10-21 18:54:44.923 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:54:45.258 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:54:45.260 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:54:45.625 [INF]   ➤ Found 13 accounts
+2026-10-21 18:54:45.625 [INF]   ➤ Attempting deposit of invalid amount -999999999
+2026-10-21 18:54:45.969 [INF] ✔ PASSED: Extremely large deposit amount is handled
+2026-10-21 18:54:45.970 [INF] ▶ Scenario: SQL injection in login username is safely rejected
+2026-10-21 18:54:45.970 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:54:46.306 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:54:46.307 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:54:46.643 [INF]   ➤ Found 13 accounts
+2026-10-21 18:54:46.643 [INF]   ➤ Attempting login with invalid credentials 'john' OR '1'='1'
+2026-10-21 18:54:46.822 [INF] ✔ PASSED: SQL injection in login username is safely rejected
+2026-10-21 18:54:46.823 [INF] ▶ Scenario: Transfer to non-existent account is rejected
+2026-10-21 18:54:46.823 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:54:47.550 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:54:47.552 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:54:47.894 [INF]   ➤ Found 13 accounts
+2026-10-21 18:54:47.896 [INF]   ➤ Attempting transfer to non-existent account
+2026-10-21 18:54:48.240 [INF] ✔ PASSED: Transfer to non-existent account is rejected
+2026-10-21 18:54:48.241 [INF] ▶ Scenario: Zero deposit amount is rejected
+2026-10-21 18:54:48.242 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:54:48.616 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:54:48.619 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:54:48.970 [INF]   ➤ Found 13 accounts
+2026-10-21 18:54:48.971 [INF]   ➤ Attempting deposit of invalid amount 0
+2026-10-21 18:54:49.310 [INF] ✔ PASSED: Zero deposit amount is rejected
+2026-10-21 18:54:49.311 [INF] ▶ Scenario: Overdraft withdrawal is rejected
+2026-10-21 18:54:49.311 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:54:49.657 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:54:49.659 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:54:49.996 [INF]   ➤ Found 13 accounts
+2026-10-21 18:54:49.997 [INF]   ➤ Attempting overdraft withdrawal
+2026-10-21 18:54:50.333 [INF] ✔ PASSED: Overdraft withdrawal is rejected
+2026-10-21 18:54:50.334 [INF] ▶ Scenario: Request with string account ID returns error
+2026-10-21 18:54:50.335 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:54:50.667 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:54:50.669 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:54:51.011 [INF]   ➤ Found 13 accounts
+2026-10-21 18:54:51.012 [INF]   ➤ Requesting account info for accountId: invalid_id
+2026-10-21 18:54:51.537 [INF] ✔ PASSED: Request with string account ID returns error
+2026-10-21 18:54:51.543 [INF] ▶ Scenario: User cannot access another user's account data
+2026-10-21 18:54:51.543 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:54:51.918 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:54:51.919 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:54:52.254 [INF]   ➤ Found 13 accounts
+2026-10-21 18:54:52.255 [INF]   ➤ Logging in as second user 'jane'
+2026-10-21 18:54:52.585 [INF]   ➤ User 12212 attempting to access account 0
+2026-10-21 18:54:52.939 [INF] ✔ PASSED: User cannot access another user's account data
+2026-10-21 18:54:52.944 [INF] ▶ Scenario: Full customer journey - login, transact, and retrieve by date range
+2026-10-21 18:54:52.944 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:54:53.275 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:54:53.278 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:54:53.616 [INF]   ➤ Found 13 accounts
+2026-10-21 18:54:53.953 [INF]   ➤ Depositing $100.00 to account 12345
+2026-10-21 18:54:54.297 [INF]   ➤ Withdrawing $40.00 from account 12345
+2026-10-21 18:54:54.635 [INF]   ➤ Fetching balance for account 12345
+2026-10-21 18:54:54.989 [INF]   ➤ Current balance: -$2,680.00
+2026-10-21 18:54:54.993 [INF]   ➤ Retrieving transactions for today (10-21-2026)
+2026-10-21 18:54:55.335 [INF] ✔ PASSED: Full customer journey - login, transact, and retrieve by date range
+2026-10-21 18:54:55.337 [INF] ▶ Scenario: Future date range returns empty array
+2026-10-21 18:54:55.338 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:54:55.677 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:54:55.678 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:54:56.073 [INF]   ➤ Found 13 accounts
+2026-10-21 18:54:56.074 [INF]   ➤ Fetching transactions from 01-01-2099 to 12-31-2099 for account 12345
+2026-10-21 18:54:56.412 [INF] ✔ PASSED: Future date range returns empty array
+2026-10-21 18:54:56.413 [INF] ▶ Scenario: Month and year boundary spanning
+2026-10-21 18:54:56.413 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:54:56.768 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:54:56.769 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:54:57.107 [INF]   ➤ Found 13 accounts
+2026-10-21 18:54:57.107 [INF]   ➤ Fetching transactions from 12-31-2023 to 01-01-2024 for account 12345
+2026-10-21 18:54:57.453 [INF] ✔ PASSED: Month and year boundary spanning
+2026-10-21 18:54:57.454 [INF] ▶ Scenario: Reversed date range handling
+2026-10-21 18:54:57.454 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:54:57.823 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:54:57.825 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:54:58.170 [INF]   ➤ Found 13 accounts
+2026-10-21 18:54:58.170 [INF]   ➤ Fetching transactions from 12-31-2024 to 01-01-2024 for account 12345
+2026-10-21 18:54:58.508 [INF] ✔ PASSED: Reversed date range handling
+2026-10-21 18:54:58.509 [INF] ▶ Scenario: Range includes all dates within boundaries
+2026-10-21 18:54:58.510 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:54:58.898 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:54:58.900 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:54:59.235 [INF]   ➤ Found 13 accounts
+2026-10-21 18:54:59.235 [INF]   ➤ Fetching transactions from 01-01-2024 to 12-31-2024 for account 12345
+2026-10-21 18:54:59.569 [INF] ✔ PASSED: Range includes all dates within boundaries
+2026-10-21 18:54:59.570 [INF] ▶ Scenario: Boundaries are inclusive
+2026-10-21 18:54:59.570 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:54:59.905 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:54:59.907 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:55:00.265 [INF]   ➤ Found 13 accounts
+2026-10-21 18:55:00.266 [INF]   ➤ Fetching transactions from 01-01-2024 to 01-01-2024 for account 12345
+2026-10-21 18:55:00.632 [INF] ✔ PASSED: Boundaries are inclusive
+2026-10-21 18:55:00.633 [INF] ▶ Scenario: No duplicate transactions
+2026-10-21 18:55:00.633 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:55:00.972 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:55:00.974 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:55:01.345 [INF]   ➤ Found 13 accounts
+2026-10-21 18:55:01.346 [INF]   ➤ Retrieving transactions for today (10-21-2026)
+2026-10-21 18:55:01.681 [INF] ✔ PASSED: No duplicate transactions
+2026-10-21 18:55:01.682 [INF] ▶ Scenario: Empty range returns empty array
+2026-10-21 18:55:01.682 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:55:02.028 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:55:02.030 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:55:02.383 [INF]   ➤ Found 13 accounts
+2026-10-21 18:55:02.383 [INF]   ➤ Fetching transactions from 01-01-2000 to 01-02-2000 for account 12345
+2026-10-21 18:55:02.724 [INF] ✔ PASSED: Empty range returns empty array
+2026-10-21 18:55:02.725 [INF] ▶ Scenario: Single date returns only transactions for that date
+2026-10-21 18:55:02.725 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:55:03.066 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:55:03.067 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:55:03.405 [INF]   ➤ Found 13 accounts
+2026-10-21 18:55:03.406 [INF]   ➤ Retrieving transactions for today (10-21-2026)
+2026-10-21 18:55:03.747 [INF] ✔ PASSED: Single date returns only transactions for that date
+2026-10-21 18:55:03.750 [INF] ▶ Scenario: Money transfer reduces source and increases target by exact amount
+2026-10-21 18:55:03.750 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:55:04.111 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:55:04.114 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:55:04.459 [INF]   ➤ Found 13 accounts
+2026-10-21 18:55:05.250 [INF]   ➤ Transferring $50.00 from 12345 to 12456
+2026-10-21 18:55:06.388 [INF] ✔ PASSED: Money transfer reduces source and increases target by exact amount
+2026-10-21 18:55:06.390 [INF] ▶ Scenario: New savings account creation and basic operations
+2026-10-21 18:55:06.390 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:55:06.802 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:55:06.804 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:55:07.153 [INF]   ➤ Found 13 accounts
+2026-10-21 18:55:07.154 [INF]   ➤ Creating savings account for customer 12212
+2026-10-21 18:55:07.522 [INF]   ➤ Created savings account: 14565
+2026-10-21 18:55:07.894 [INF]   ➤ Depositing to new account 14565
+2026-10-21 18:55:08.647 [INF] ✔ PASSED: New savings account creation and basic operations
+2026-10-21 18:55:08.649 [INF] ▶ Scenario: Transaction endpoint responds within SLA
+2026-10-21 18:55:08.649 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:55:09.009 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:55:09.011 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:55:09.360 [INF]   ➤ Found 14 accounts
+2026-10-21 18:55:09.362 [INF]   ➤ Measuring transaction list response time
+2026-10-21 18:55:09.708 [INF]   ➤ ✓ Response time 344ms < 5000ms
+2026-10-21 18:55:09.715 [INF] ✔ PASSED: Transaction endpoint responds within SLA
+2026-10-21 18:55:09.716 [INF] ▶ Scenario: Account list response contains required contract fields
+2026-10-21 18:55:09.716 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:55:10.057 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:55:10.058 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:55:10.403 [INF]   ➤ Found 14 accounts
+2026-10-21 18:55:10.404 [INF]   ➤ Measuring account list response time
+2026-10-21 18:55:10.766 [INF]   ➤ Response time: 362ms
+2026-10-21 18:55:10.768 [INF] ✔ PASSED: Account list response contains required contract fields
+2026-10-21 18:55:10.769 [INF] ▶ Scenario: Account list endpoint consistently responds under load
+2026-10-21 18:55:10.769 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:55:11.098 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:55:11.100 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:55:11.437 [INF]   ➤ Found 14 accounts
+2026-10-21 18:55:11.437 [INF]   ➤ Measuring account list response time
+2026-10-21 18:55:11.781 [INF]   ➤ Response time: 344ms
+2026-10-21 18:55:11.782 [INF]   ➤ ✓ Response time 344ms < 10000ms
+2026-10-21 18:55:11.783 [INF] ✔ PASSED: Account list endpoint consistently responds under load
+2026-10-21 18:55:11.788 [INF] ▶ Scenario: Transaction list returns valid JSON contract
+2026-10-21 18:55:11.788 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:55:12.126 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:55:12.127 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:55:12.475 [INF]   ➤ Found 14 accounts
+2026-10-21 18:55:12.476 [INF]   ➤ Measuring transaction list response time
+2026-10-21 18:55:12.816 [INF] ✔ PASSED: Transaction list returns valid JSON contract
+2026-10-21 18:55:12.817 [INF] ▶ Scenario: Account list endpoint responds within SLA
+2026-10-21 18:55:12.817 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:55:13.159 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:55:13.160 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:55:13.499 [INF]   ➤ Found 14 accounts
+2026-10-21 18:55:13.499 [INF]   ➤ Measuring account list response time
+2026-10-21 18:55:13.838 [INF]   ➤ Response time: 339ms
+2026-10-21 18:55:13.839 [INF]   ➤ ✓ Response time 339ms < 5000ms
+2026-10-21 18:55:13.841 [INF] ✔ PASSED: Account list endpoint responds within SLA
+2026-10-21 18:55:13.844 [INF] ▶ Scenario: Bill payment is processed and returns correct payee details
+2026-10-21 18:55:13.844 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:55:14.196 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:55:14.198 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:55:14.556 [INF]   ➤ Found 14 accounts
+2026-10-21 18:55:14.558 [INF]   ➤ Paying bill of $75.00 to 'Electric Company' from account 12345
+2026-10-21 18:55:14.930 [INF] ✔ PASSED: Bill payment is processed and returns correct payee details
+2026-10-21 18:55:14.932 [INF] ▶ Scenario: All transaction endpoints return consistent data for today
+2026-10-21 18:55:14.932 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:55:15.297 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:55:15.298 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:55:15.650 [INF]   ➤ Found 14 accounts
+2026-10-21 18:55:15.992 [INF]   ➤ Depositing $25.00 to account 12345
+2026-10-21 18:55:16.323 [INF]   ➤ Fetching via /fromDate-toDate endpoint
+2026-10-21 18:55:16.666 [INF]   ➤ Fetching via /onDate endpoint
+2026-10-21 18:55:17.001 [INF]   ➤ Fetching via /month endpoint
+2026-10-21 18:55:17.709 [INF] ✔ PASSED: All transaction endpoints return consistent data for today
+2026-10-21 18:55:17.712 [INF] ▶ Scenario: Account data integrity is maintained after failed operation
+2026-10-21 18:55:17.712 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:55:18.052 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:55:18.054 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:55:18.392 [INF]   ➤ Found 14 accounts
+2026-10-21 18:55:18.737 [INF]   ➤ Balance before invalid op: -$2,880.00
+2026-10-21 18:55:18.738 [INF]   ➤ Attempting invalid withdrawal
+2026-10-21 18:55:19.411 [INF] ✔ PASSED: Account data integrity is maintained after failed operation
+2026-10-21 18:55:19.412 [INF] ▶ Scenario: Multiple failed operations do not accumulate errors
+2026-10-21 18:55:19.412 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:55:19.752 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:55:19.753 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:55:20.091 [INF]   ➤ Found 14 accounts
+2026-10-21 18:55:20.436 [INF]   ➤ Balance before invalid op: -$2,880.00
+2026-10-21 18:55:20.436 [INF]   ➤ Attempting invalid withdrawal
+2026-10-21 18:55:20.774 [INF]   ➤ Attempting invalid withdrawal
+2026-10-21 18:55:21.479 [INF] ✔ PASSED: Multiple failed operations do not accumulate errors
+2026-10-21 18:55:21.480 [INF] ▶ Scenario: Failed overdraft withdrawal leaves balance unchanged
+2026-10-21 18:55:21.480 [INF]   ➤ Logging in as 'john'
+2026-10-21 18:55:21.838 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 18:55:21.840 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 18:55:22.175 [INF]   ➤ Found 14 accounts
+2026-10-21 18:55:22.508 [INF]   ➤ Balance before invalid op: -$2,880.00
+2026-10-21 18:55:22.508 [INF]   ➤ Attempting invalid withdrawal
+2026-10-21 18:55:23.205 [INF] ✔ PASSED: Failed overdraft withdrawal leaves balance unchanged
+2026-10-21 18:55:23.209 [INF] === ParaBank API Test Run Completed ===
+2026-10-21 19:03:43.403 [INF] Logger initialised at "Information" level
+2026-10-21 19:03:43.424 [INF] === ParaBank API Test Run Started ===
+2026-10-21 19:03:43.494 [INF] ▶ Scenario: Future date range returns empty array
+2026-10-21 19:03:43.509 [INF]   ➤ Logging in as 'john'
+2026-10-21 19:03:44.668 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 19:03:44.678 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 19:03:45.049 [INF]   ➤ Found 1 accounts
+2026-10-21 19:03:45.052 [INF]   ➤ Fetching transactions from 01-01-2099 to 12-31-2099 for account 13344
+2026-10-21 19:03:45.422 [INF] ✔ PASSED: Future date range returns empty array
+2026-10-21 19:03:45.435 [INF] ▶ Scenario: Month and year boundary spanning
+2026-10-21 19:03:45.435 [INF]   ➤ Logging in as 'john'
+2026-10-21 19:03:45.808 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 19:03:45.811 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 19:03:46.198 [INF]   ➤ Found 1 accounts
+2026-10-21 19:03:46.200 [INF]   ➤ Fetching transactions from 12-31-2023 to 01-01-2024 for account 13344
+2026-10-21 19:03:46.559 [INF] ✔ PASSED: Month and year boundary spanning
+2026-10-21 19:03:46.561 [INF] ▶ Scenario: Reversed date range handling
+2026-10-21 19:03:46.561 [INF]   ➤ Logging in as 'john'
+2026-10-21 19:03:46.904 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 19:03:46.906 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 19:03:47.250 [INF]   ➤ Found 1 accounts
+2026-10-21 19:03:47.251 [INF]   ➤ Fetching transactions from 12-31-2024 to 01-01-2024 for account 13344
+2026-10-21 19:03:47.609 [INF] ✔ PASSED: Reversed date range handling
+2026-10-21 19:03:47.611 [INF] ▶ Scenario: Range includes all dates within boundaries
+2026-10-21 19:03:47.611 [INF]   ➤ Logging in as 'john'
+2026-10-21 19:03:47.956 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 19:03:47.958 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 19:03:48.324 [INF]   ➤ Found 1 accounts
+2026-10-21 19:03:48.325 [INF]   ➤ Fetching transactions from 01-01-2024 to 12-31-2024 for account 13344
+2026-10-21 19:03:48.672 [INF] ✔ PASSED: Range includes all dates within boundaries
+2026-10-21 19:03:48.673 [INF] ▶ Scenario: Boundaries are inclusive
+2026-10-21 19:03:48.674 [INF]   ➤ Logging in as 'john'
+2026-10-21 19:03:49.042 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 19:03:49.043 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 19:03:49.409 [INF]   ➤ Found 1 accounts
+2026-10-21 19:03:49.410 [INF]   ➤ Fetching transactions from 01-01-2024 to 01-01-2024 for account 13344
+2026-10-21 19:03:49.755 [INF] ✔ PASSED: Boundaries are inclusive
+2026-10-21 19:03:49.756 [INF] ▶ Scenario: No duplicate transactions
+2026-10-21 19:03:49.757 [INF]   ➤ Logging in as 'john'
+2026-10-21 19:03:50.102 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 19:03:50.104 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 19:03:50.451 [INF]   ➤ Found 1 accounts
+2026-10-21 19:03:50.455 [INF]   ➤ Retrieving transactions for today (10-21-2026)
+2026-10-21 19:03:50.801 [INF] ✔ PASSED: No duplicate transactions
+2026-10-21 19:03:50.802 [INF] ▶ Scenario: Empty range returns empty array
+2026-10-21 19:03:50.802 [INF]   ➤ Logging in as 'john'
+2026-10-21 19:03:51.675 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 19:03:51.677 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 19:03:52.019 [INF]   ➤ Found 1 accounts
+2026-10-21 19:03:52.020 [INF]   ➤ Fetching transactions from 01-01-2000 to 01-02-2000 for account 13344
+2026-10-21 19:03:52.367 [INF] ✔ PASSED: Empty range returns empty array
+2026-10-21 19:03:52.368 [INF] ▶ Scenario: Single date returns only transactions for that date
+2026-10-21 19:03:52.369 [INF]   ➤ Logging in as 'john'
+2026-10-21 19:03:52.711 [INF]   ➤ Logged in — customerId: 12212
+2026-10-21 19:03:52.712 [INF]   ➤ Fetching accounts for customerId 12212
+2026-10-21 19:03:53.055 [INF]   ➤ Found 1 accounts
+2026-10-21 19:03:53.057 [INF]   ➤ Retrieving transactions for today (10-21-2026)
+2026-10-21 19:03:53.809 [WRN] ✘ FAILED: Single date returns only transactions for that date — Expected _lastTransactionList not to be empty because transactions should be returned.
+2026-10-21 19:03:53.823 [INF] === ParaBank API Test Run Completed ===
